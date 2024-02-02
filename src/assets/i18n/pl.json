@@ -1,3 +1,9 @@
 {
-  "HELLO": "Witaj Świecie"
+  "navbar": {
+    "home": "Home",
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "contact": "Kontakt"
+  }
 }

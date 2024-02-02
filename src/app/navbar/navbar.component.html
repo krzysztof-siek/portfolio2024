@@ -1,0 +1,18 @@
+<div [ngClass]="{'sticky-nav': isSticky}" class="nav-wrapper">
+  <div class="logo">
+    <p>logo</p>
+  </div>
+  <nav>
+    <ul [ngClass]="{'is-active': isMenuOpen}" class="menu">
+      <li *ngFor="let element of navMenu"
+          class="list-element">{{'navbar.' + element.translationKey | translate}}</li>
+      <li class="lang"><span>EN</span> / <span>PL</span></li>
+    </ul>
+    <button (click)="isMenuOpen = !isMenuOpen" [ngClass]="{'is-active': isMenuOpen, 'hamburger--spin': true}"
+            class="hamburger">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </nav>
+</div>

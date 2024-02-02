@@ -11,4 +11,9 @@ export class AppComponent {
     translate.setDefaultLang('pl');
   }
   title = 'portfolio2024';
+
+  changeLanguage(lang: string) {
+    this.translate.use(lang);
+  }
+
 }
