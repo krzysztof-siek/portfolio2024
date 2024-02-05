@@ -17,3 +17,25 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif !important;
 }
+
+.language-select {
+  visibility: hidden;
+  
+
+  .mat-mdc-text-field-wrapper {
+    width: 26px;
+    height: 26px;
+  }
+
+  .mat-pseudo-checkbox {
+    display: none;
+  }
+}
+
+.cdk-overlay-pane {
+  width: 40px !important;
+
+  .mat-pseudo-checkbox {
+    display: none;
+  }
+}

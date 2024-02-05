@@ -6,9 +6,26 @@
     <ul [ngClass]="{'is-active': isMenuOpen}" class="menu">
       <li *ngFor="let element of navMenu"
           class="list-element">{{'navbar.' + element.translationKey | translate}}</li>
-      <li class="lang"><span>EN</span> / <span>PL</span></li>
+
+      <div (click)="openSelect(select)"
+           [ngStyle]="{'background-image': 'url(' + getCountryImage(selectedCountry) + ')'}"
+           class="language-wrapper">
+        <mat-form-field appearance="fill" class="language-select">
+          <mat-select #select (selectionChange)="changeLanguage($event.value)" [(value)]="selectedCountry">
+            <mat-select-trigger>
+              <img *ngIf="selectedCountry" [src]="getCountryImage(selectedCountry)"
+                   alt="{{getCountryName(selectedCountry)}}" height="20"
+                   width="30">
+            </mat-select-trigger>
+            <mat-option *ngFor="let country of languages" [value]="country.value">
+              <img [src]="country.image" alt="{{country.name}}" height="20" width="30">
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
     </ul>
-    <button (click)="isMenuOpen = !isMenuOpen" [ngClass]="{'is-active': isMenuOpen, 'hamburger--spin': true}"
+    <button (click)="handleMenu()" [ngClass]="{'is-active': isMenuOpen, 'hamburger--spin': true}"
             class="hamburger">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
