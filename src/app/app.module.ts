@@ -12,6 +12,11 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {NavbarComponent} from "./navbar/navbar.component";
 import {CommonModule} from "@angular/common";
+import {AboutComponent} from "./sections/about/about.component";
+import {SkillsComponent} from "./sections/skills/skills.component";
+import {ProjectsComponent} from "./sections/projects/projects.component";
+import {ContactComponent} from "./sections/contact/contact.component";
+import {HomeComponent} from "./sections/home/home.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -39,7 +44,12 @@ const MATERIALS_COMPONENTS = [
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    AboutComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ContactComponent,
+    HomeComponent
   ],
   providers: [
     provideAnimationsAsync()

@@ -3,4 +3,5 @@ export interface MenuInterface {
   translationKey: string;
   value: string;
   active: boolean;
+  href: string;
 }

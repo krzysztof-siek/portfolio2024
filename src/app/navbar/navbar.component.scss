@@ -28,6 +28,11 @@
       font-size: 16px;
       cursor: pointer;
 
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
       &:last-of-type {
         padding-right: 20px;
         margin-right: 20px;
@@ -38,7 +43,7 @@
         color: $yellow;
       }
 
-      &.active {
+      &.active-link {
         color: $yellow;
       }
     }
@@ -70,6 +75,7 @@
   align-items: center;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 mat-option {
