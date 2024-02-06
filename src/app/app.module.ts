@@ -17,6 +17,8 @@ import {SkillsComponent} from "./sections/skills/skills.component";
 import {ProjectsComponent} from "./sections/projects/projects.component";
 import {ContactComponent} from "./sections/contact/contact.component";
 import {HomeComponent} from "./sections/home/home.component";
+import {SectionComponent} from "./sections/section/section.component";
+import {SocialsComponent} from "./shared/socials/socials.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -31,7 +33,14 @@ const MATERIALS_COMPONENTS = [
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    SectionComponent,
+    AboutComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ContactComponent,
+    SocialsComponent
   ],
   imports: [
     CommonModule,
@@ -44,12 +53,7 @@ const MATERIALS_COMPONENTS = [
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    }),
-    AboutComponent,
-    SkillsComponent,
-    ProjectsComponent,
-    ContactComponent,
-    HomeComponent
+    })
   ],
   providers: [
     provideAnimationsAsync()

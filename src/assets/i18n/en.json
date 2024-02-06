@@ -5,5 +5,11 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "buttons": {
+    "hireMe": "Hire me!"
+  },
+  "about": {
+    "welcome": "Hey, i'm"
   }
 }

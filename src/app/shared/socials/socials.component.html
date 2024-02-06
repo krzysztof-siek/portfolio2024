@@ -1,0 +1,10 @@
+<div class="socials">
+  <a (mouseenter)="activeTab = social.name"
+     *ngFor="let social of socialList"
+     [ngClass]="{'active': activeTab === social.name}"
+     class="icon-wrapper" href="{{social.link}}"
+     target="_blank">
+    <i [ngClass]="social.icon" class="fab"></i>
+    <span>{{social.name}}</span>
+  </a>
+</div>

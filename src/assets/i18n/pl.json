@@ -5,5 +5,11 @@
     "skills": "Umiejętności",
     "projects": "Projekty",
     "contact": "Kontakt"
+  },
+  "buttons": {
+    "hireMe": "Zatrudnij mnie!"
+  },
+  "about": {
+    "welcome": "Cześć, jestem"
   }
 }
