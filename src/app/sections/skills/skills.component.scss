@@ -1,3 +1,47 @@
-.skills {
-  min-height: 100vh;
+@import "src/variables";
+
+section {
+  background-color: black;
 }
+
+.info {
+  flex: 1;
+  padding-right: 50px;
+
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+    color: $darker-white;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $grey;
+  }
+}
+
+.skills {
+  flex: 1;
+  padding-left: 50px;
+
+  .skill {
+    padding: 5px 0;
+
+    .technology {
+      font: 500 16px Roboto, sans-serif !important;
+    }
+
+    .mat-mdc-progress-bar {
+      background-color: white;
+      border-radius: 10px;
+      --mdc-linear-progress-active-indicator-color: #fdc66a;
+    }
+  }
+}
+
+
+
+

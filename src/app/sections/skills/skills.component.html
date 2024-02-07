@@ -1,4 +1,24 @@
-<div class="skills" id="skills">
-  <p>skills works</p>
-</div>
+<section id="skills">
+  <div class="container">
+    <div class="section-title">
+      <h4 class="title">
+        {{'skills.title' | translate | uppercase}}
+        <h2 class="subtitle">{{'skills.title' | translate | uppercase}}</h2>
+      </h4>
+    </div>
+    <div class="row">
+      <div class="info">
+        <h3 class="title">{{'skills.info-title' | translate}}</h3>
+        <p class="subtitle">{{'skills.info-description' | translate}}</p>
+      </div>
+      <div class="skills">
+        <div *ngFor="let skill of listOfSkills" class="skill">
+          <h5 class="technology">{{skill.name}}</h5>
+          <mat-progress-bar class="custom-color" mode="determinate" value="{{skill.value}}"></mat-progress-bar>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 

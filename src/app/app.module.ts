@@ -18,6 +18,7 @@ import {ProjectsComponent} from "./sections/projects/projects.component";
 import {ContactComponent} from "./sections/contact/contact.component";
 import {HomeComponent} from "./sections/home/home.component";
 import {SocialsComponent} from "./shared/socials/socials.component";
+import {MatProgressBar} from "@angular/material/progress-bar";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -26,7 +27,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 const MATERIALS_COMPONENTS = [
   MatButtonModule,
   MatInputModule,
-  MatSelectModule
+  MatSelectModule,
+  MatProgressBar
 ]
 
 @NgModule({

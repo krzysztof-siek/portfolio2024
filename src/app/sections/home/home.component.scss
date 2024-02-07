@@ -9,7 +9,7 @@
   min-height: 100vh;
 
   .info {
-    flex: 0 0 50%;
+    flex: 0;
 
     .welcome {
       font-size: 30px;
@@ -31,6 +31,15 @@
       font-size: 36px;
       line-height: 36px;
       color: $grey;
+    }
+  }
+
+  .photo {
+    flex: 1;
+
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 
