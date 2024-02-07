@@ -8,40 +8,29 @@
   align-items: center;
   min-height: 100vh;
 
-  .container {
-    max-width: 1270px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .info {
+    flex: 0 0 50%;
 
-    .info {
-      flex: 0 0 50%;
-
-      .welcome {
-        font-size: 30px;
-        line-height: 30px;
-        color: $yellow;
-        font-family: 'Inter', sans-serif;
-      }
-
-      .name {
-        font-size: 120px;
-        line-height: 120px;
-        color: white;
-        font-family: 'Inter', sans-serif;
-        font-weight: 900;
-      }
-
-      .position {
-        font-family: 'Inter', sans-serif;
-        font-size: 36px;
-        line-height: 36px;
-      }
+    .welcome {
+      font-size: 30px;
+      line-height: 30px;
+      color: $yellow;
+      font-family: 'Inter', sans-serif;
     }
 
-    .photo {
-      //flex: 0 0 50%;
-      //width: calc(1270px / 2);
+    .name {
+      font-size: 120px;
+      line-height: 120px;
+      color: white;
+      font-family: 'Inter', sans-serif;
+      font-weight: 900;
+    }
+
+    .position {
+      font-family: 'Inter', sans-serif;
+      font-size: 36px;
+      line-height: 36px;
+      color: $grey;
     }
   }
 

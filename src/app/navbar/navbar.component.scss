@@ -7,10 +7,12 @@
   color: white;
   padding: 20px 30px;
   transition: ease-in-out .5s;
+  z-index: 10;
 
   &.sticky-nav {
     position: sticky;
     top: 0;
+    background-color: rgba(0, 0, 0, 1);
     padding: 10px 30px;
     transition: ease-in-out .5s;
   }
@@ -27,6 +29,7 @@
       margin: 0 10px;
       font-size: 16px;
       cursor: pointer;
+      //text-transform: uppercase;
 
       a {
         color: inherit;

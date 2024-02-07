@@ -49,7 +49,9 @@ body {
   padding: 30px 40px !important;
 }
 
-//.mat-mdc-raised-button {
-//  background-color: $yellow !important;
-//  color: black !important;
-//}
+.container2 {
+  max-width: 1270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

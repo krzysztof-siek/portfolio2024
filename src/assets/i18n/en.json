@@ -7,9 +7,17 @@
     "contact": "Contact"
   },
   "buttons": {
-    "hireMe": "Hire me!"
+    "hireMe": "Hire me!",
+    "downloadCv": "Download CV",
+    "projects": "Projects"
+  },
+  "home": {
+    "welcome": "Hey, i'm"
   },
   "about": {
-    "welcome": "Hey, i'm"
+    "title": "About me",
+    "description": "My name is Krzysztof, and I live in Poznań. As a front-end developer with over 4 years of experience, I specialize in creating modern web applications using the Angular framework. My projects combine aesthetics, functionality, and intuitiveness, always created with attention to the smallest details and semantics. As a perfectionist, I attach great importance to the quality of the code. I constantly strive to develop and improve my skills, which allows me to work effectively in teams and adapt to the changing requirements of projects, making my work better and better.",
+    "characteristics": "Practicial, innovative, reliable, working with full commitment",
+    "cooperation": "If you are interested in cooperation, please contact me!"
   }
 }

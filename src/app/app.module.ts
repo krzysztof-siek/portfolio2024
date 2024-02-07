@@ -17,7 +17,6 @@ import {SkillsComponent} from "./sections/skills/skills.component";
 import {ProjectsComponent} from "./sections/projects/projects.component";
 import {ContactComponent} from "./sections/contact/contact.component";
 import {HomeComponent} from "./sections/home/home.component";
-import {SectionComponent} from "./sections/section/section.component";
 import {SocialsComponent} from "./shared/socials/socials.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -35,7 +34,6 @@ const MATERIALS_COMPONENTS = [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    SectionComponent,
     AboutComponent,
     SkillsComponent,
     ProjectsComponent,

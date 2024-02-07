@@ -1,3 +1,28 @@
-<app-section id="about">
-  <p>about works</p>
-</app-section>
+<section id="about">
+  <div class="container">
+    <div class="section-title">
+      <h4 class="title">
+        {{'about.title' | translate | uppercase}}
+        <h2 class="subtitle">{{'about.title' | translate | uppercase}}</h2>
+      </h4>
+    </div>
+    <div class="row">
+      <div class="photo">
+        <img alt="" loading="eagers" src="./assets/images/developer/user15.png">
+      </div>
+      <div class="info">
+        <h3 class="welcome">Krzysztof Siek</h3>
+        <h4 class="profession">Frontend developer</h4>
+        <p class="description">{{'about.description' | translate}}</p>
+        <p class="description">{{'about.characteristics' | translate}}</p>
+        <p class="cooperation">{{'about.cooperation' | translate}}</p>
+        <img alt="" loading="eagers" src="./assets/images/developer/sign.png">
+        <div class="buttons">
+          <button class="yellow" mat-raised-button>{{'buttons.downloadCv' | translate}}</button>
+          <button class="yellow" mat-raised-button>{{'buttons.projects' | translate}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

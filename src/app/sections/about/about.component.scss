@@ -1,1 +1,131 @@
+@import "src/variables";
 
+//TODO: TO JAKO SEKCJE I DAC DO GLOWNYCH STYLI, ZEBY MOZNA W KAZDEJ SEKCJI UZYWAC!
+section {
+  background-color: $black-bgc2;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 0;
+
+  .section-title {
+    display: flex;
+    align-self: center;
+
+    .title {
+      font-size: 24px;
+      color: $yellow;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 2;
+
+      &::after, &::before {
+        position: absolute;
+        content: '';
+        bottom: -20px;
+        left: 0;
+        height: 2px;
+        background: $divider;
+        border-radius: 6px;
+      }
+
+      &::after {
+        width: calc(100% + 60px);
+        transform: translateX(-30px);
+
+      }
+
+      &::before {
+        width: calc(60%);
+        transform: translateX(40%);
+        background: $yellow;
+        z-index: 1;
+      }
+
+      .subtitle {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 90px;
+        white-space: nowrap;
+        color: $section-subtitle;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+//TODO: container przenieść do głównych styli, żeby można było wykorzystywać
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1270px;
+
+  .row {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .info {
+      flex: 1;
+
+      .welcome {
+        font-size: 36px;
+        color: $white-text;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        //TODO: Font family powinien być ustawiony w info i dziedziczyć, ale nie działa - poprawić
+      }
+
+      .profession {
+        font-size: 24px;
+        color: $yellow;
+        font-family: 'Inter', sans-serif;
+        font-weight: 300;
+      }
+
+      .description {
+        font-size: 16px;
+        color: grey;
+        font-family: 'Inter', sans-serif;
+      }
+
+      .cooperation {
+        color: $yellow;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+      }
+
+      img {
+        margin-top: 20px;
+      }
+
+      .buttons {
+        margin-top: 50px;
+
+        :first-child {
+          margin-right: 50px;
+        }
+      }
+    }
+
+    .photo {
+      flex: 1;
+
+      img {
+        width: 100%;
+        max-width: 550px;
+      }
+    }
+  }
+}
