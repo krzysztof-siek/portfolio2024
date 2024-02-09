@@ -1,5 +1,5 @@
 import {Component, HostListener} from '@angular/core';
-import {MenuInterface} from "../interfaces/menu-interface";
+import {MenuInterface} from "../interfaces/menu.interface";
 import {TranslateService} from "@ngx-translate/core";
 import {LanguageEnum} from "../enums/language.enum";
 import {LanguageInterface} from "../interfaces/language.interface";

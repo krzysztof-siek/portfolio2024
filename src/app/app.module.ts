@@ -20,6 +20,8 @@ import {HomeComponent} from "./sections/home/home.component";
 import {SocialsComponent} from "./shared/socials/socials.component";
 import {MatProgressBar} from "@angular/material/progress-bar";
 import {MatIcon} from "@angular/material/icon";
+import {ReactiveFormsModule} from "@angular/forms";
+import {FooterComponent} from "./footer/footer.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -33,21 +35,27 @@ const MATERIALS_COMPONENTS = [
   MatIcon
 ]
 
+const COMPONENTS = [
+  AppComponent,
+  NavbarComponent,
+  HomeComponent,
+  AboutComponent,
+  SkillsComponent,
+  ProjectsComponent,
+  ContactComponent,
+  SocialsComponent,
+  FooterComponent
+]
+
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    HomeComponent,
-    AboutComponent,
-    SkillsComponent,
-    ProjectsComponent,
-    ContactComponent,
-    SocialsComponent
+    ...COMPONENTS
   ],
   imports: [
     CommonModule,
     BrowserModule,
     HttpClientModule,
+    ReactiveFormsModule,
     ...MATERIALS_COMPONENTS,
     TranslateModule.forRoot({
       loader: {

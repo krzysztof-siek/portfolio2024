@@ -1,0 +1,20 @@
+@import "src/variables";
+
+footer {
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  .name {
+    color: $yellow;
+  }
+}
+
+.container {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+

@@ -8,6 +8,11 @@
   align-items: center;
   min-height: 100vh;
 
+  .app-socials {
+    margin-top: 50px;
+    display: flex;
+  }
+
   .info {
     flex: 0;
 
@@ -42,6 +47,4 @@
       height: 100%;
     }
   }
-
-
 }

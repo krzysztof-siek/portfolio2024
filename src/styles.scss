@@ -127,3 +127,32 @@ section {
   }
 }
 
+mat-form-field {
+  .mdc-text-field--filled {
+    background-color: $black1 !important;
+    border-radius: 10px !important;
+    border: 1px solid $border-black2;
+
+    mat-label {
+      color: $divider;
+    }
+
+    input, textarea {
+      color: $grey !important;
+    }
+  }
+
+  .mdc-text-field--focused {
+    border: 1px solid $yellow;
+  }
+
+  .mdc-text-field--invalid {
+    border: 1px solid red;
+  }
+
+  .mdc-line-ripple {
+    display: none;
+  }
+}
+
+
