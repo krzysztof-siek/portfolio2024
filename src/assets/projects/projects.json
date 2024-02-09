@@ -1,0 +1,159 @@
+[
+  {
+    "id": 0,
+    "name": "VODplus",
+    "image": "vodplus",
+    "translationKey": "vodPlus",
+    "for": "MyLead",
+    "year": "2021",
+    "liveLink": "https://vod.plus/pl"
+  },
+  {
+    "id": 1,
+    "name": "PromoLovers",
+    "image": "promolovers",
+    "translationKey": "promoLovers",
+    "for": "MyLead",
+    "year": "2021",
+    "liveLink": "https://promolovers.pl/"
+  },
+  {
+    "id": 2,
+    "name": "Influencerzy MyLead",
+    "image": "influencers",
+    "translationKey": "influencers",
+    "for": "MyLead",
+    "year": "2021",
+    "liveLink": "https://influencers.mylead.global/pl"
+  },
+  {
+    "id": 3,
+    "name": "ZamienSMS",
+    "image": "zamiensms",
+    "translationKey": "zamienSms",
+    "year": "2020",
+    "liveLink": "https://zamiensms.pl/"
+  },
+  {
+    "id": 4,
+    "name": "CDAFlix",
+    "image": "cdaflix",
+    "translationKey": "cdaFlix",
+    "year": "2020",
+    "liveLink": "https://vod.plus/pl"
+  },
+  {
+    "id": 5,
+    "name": "Wisielec",
+    "image": "hangman",
+    "translationKey": "hangman",
+    "for": "MyLead",
+    "year": "2022",
+    "liveLink": "https://hangman-krzysztof-s.netlify.app/"
+  },
+  {
+    "id": 6,
+    "name": "Cyberpunk",
+    "image": "cyberpunk",
+    "translationKey": "cyberpunk",
+    "for": "MyLead",
+    "year": "2020",
+    "liveLink": "https://mlpixel.pl/tmp/cyber/index.html"
+  },
+  {
+    "id": 7,
+    "name": "Porównywarka portali randkowych",
+    "image": "date",
+    "translationKey": "date",
+    "for": "MyLead",
+    "year": "2020",
+    "liveLink": "https://date-now.pl/"
+  },
+  {
+    "id": 9,
+    "name": "Ekspress Pożyczka",
+    "image": "loan",
+    "translationKey": "loan",
+    "for": "MyLead",
+    "year": "2020",
+    "liveLink": "https://ekspres-pozyczka.pl/"
+  },
+  {
+    "id": 10,
+    "name": "Casino Rank",
+    "image": "casino",
+    "translationKey": "casino",
+    "for": "MyLead",
+    "year": "2020",
+    "liveLink": "https://casino-rank.eu/"
+  },
+  {
+    "id": 11,
+    "name": "Portfolio",
+    "image": "portfolio",
+    "translationKey": "portfolio",
+    "for": "",
+    "year": "2020",
+    "liveLink": "https://krzysztof-siek.github.io/portfolio-new/"
+  },
+  {
+    "id": 12,
+    "name": "Megan Fisher",
+    "image": "megan",
+    "translationKey": "meganFisher",
+    "for": "Fun",
+    "year": "2019",
+    "liveLink": "https://krzysztof-siek.github.io/Megan-Fisher-website/",
+    "githubLink": "https://github.com/krzysztof-siek/Megan-Fisher-website"
+  },
+  {
+    "id": 13,
+    "name": "Polind",
+    "image": "polind",
+    "translationKey": "polind",
+    "for": "Fun",
+    "year": "2019",
+    "liveLink": "https://krzysztof-siek.github.io/Polind/",
+    "githubLink": "https://github.com/krzysztof-siek/Polind"
+  },
+  {
+    "id": 14,
+    "name": "Agency",
+    "image": "agency",
+    "translationKey": "agency",
+    "year": "2019",
+    "liveLink": "https://krzysztof-siek.github.io/it-agency/",
+    "githubLink": "https://github.com/krzysztof-siek/it-agency"
+  },
+  {
+    "id": 15,
+    "name": "Diet Clinic",
+    "image": "diet",
+    "translationKey": "dietClinic",
+    "for": "Fun",
+    "year": "2019",
+    "liveLink": "https://krzysztof-siek.github.io/1000kcal---poradnia-dietetyczna/",
+    "githubLink": "https://github.com/krzysztof-siek/1000kcal---poradnia-dietetyczna"
+  },
+  {
+    "id": 16,
+    "name": "TODO",
+    "image": "todo",
+    "translationKey": "todo",
+    "for": "Fun",
+    "year": "2019",
+    "liveLink": "https://krzysztof-siek.github.io/to-do-app/",
+    "githubLink": "https://github.com/krzysztof-siek/to-do-app"
+  },
+  {
+    "id": 17,
+    "name": "API",
+    "image": "api",
+    "translationKey": "api",
+    "for": "Fun",
+    "year": "2019",
+    "liveLink": "https://krzysztof-siek.github.io/zadanie-rekrutacyjne/",
+    "githubLink": "https://github.com/krzysztof-siek/zadanie-rekrutacyjne"
+  }
+]
+

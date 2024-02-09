@@ -1,3 +1,46 @@
-<div class="projects" id="projects">
-  <p>project works</p>
-</div>
+<section id="projects">
+  <div class="container">
+    <div class="section-title">
+      <h4 class="title">
+        {{'projects.title' | translate | uppercase}}
+        <h2 class="subtitle">{{'projects.title' | translate | uppercase}}</h2>
+      </h4>
+    </div>
+    <div class="row">
+      <swiper-container #swiperRef centered-slides="true" class="mySwiper" coverflow-effect-depth="100"
+                        coverflow-effect-modifier="1" coverflow-effect-rotate="50"
+                        coverflow-effect-slide-shadows="true" coverflow-effect-stretch="0" effect="coverflow"
+                        grab-cursor="true"
+                        init="false" pagination="true" slides-per-view="auto">
+        <swiper-slide *ngFor="let project of projects | async" lazy="true">
+          <div class="slide-wrapper">
+            <div class="image">
+              <img [src]="'assets/images/projects/' + project.image + '.png'" loading="lazy">
+            </div>
+            <div class="info">
+              <h4 class="info-title">{{project.name}}</h4>
+              <h5 class="short-desc">{{project.name}}
+                - {{('projects.' + project.translationKey + '.shortDescription') | translate}} -
+                <span>{{'projects.for' | translate}} {{project.for}}</span>
+              </h5>
+              <p class="description">{{('projects.' + project.translationKey + '.description') | translate}}</p>
+              <p class="year">{{'projects.year' | translate}}: <span>{{project.year}}</span></p>
+              <div class="buttons">
+                <a *ngIf="project.liveLink" [href]="project.liveLink" class="box" target="_blank">
+                  <mat-icon fontIcon="computer"></mat-icon>
+                  <span>Live</span>
+                </a>
+                <a *ngIf="project.githubLink" [href]="project.githubLink" class="box" target="_blank">
+                  <mat-icon fontIcon="code"></mat-icon>
+                  <span>Github</span>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+  </div>
+</section>

@@ -24,5 +24,78 @@
     "title": "Skills",
     "info-title": "Technologies and tools that I use on a daily basis",
     "info-description": "As a skilled web developer, I specialize in using technologies such as HTML, CSS, TypeScript, and Angular to create dynamic and responsive web applications. In designing user interfaces, I apply Materials UI and Bootstrap, ensuring both efficiency and aesthetic appeal. Docker and REST API are crucial in my daily work, enabling effective and reliable communication with servers. Tools like Git and Jira are indispensable for project management and team collaboration, allowing for smooth organization and coordination."
+  },
+  "projects": {
+    "title": "Projects",
+    "for": "For",
+    "year": "Year of execution",
+    "vodPlus": {
+      "shortDescription": "movie and series search engine",
+      "description": "I was the main person responsible for coding and implementing all key user interface elements"
+    },
+    "promoLovers": {
+      "shortDescription": "search engine for promotions and promotional coupons",
+      "description": "I was the main person responsible for coding and implementing all key user interface elements"
+    },
+    "influencers": {
+      "shortDescription": "website dedicated to influencers",
+      "description": "I was the main person responsible for coding and implementing all key user interface elements"
+    },
+    "zamienSms": {
+      "shortDescription": "a website where you can exchange SMS for money",
+      "description": "I was primarily responsible for refreshing the design of the home page visible before logging in"
+    },
+    "cdaFlix": {
+      "shortDescription": "movie and series search engine",
+      "description": "Together with the team, I was responsible for coding and implementing all key user interface elements"
+    },
+    "hangman": {
+      "shortDescription": "a popular game created for fun",
+      "description": "Full responsibility for the code and implementation of the project"
+    },
+    "cyberpunk": {
+      "shortDescription": "promotional website",
+      "description": "Full responsibility for coding and implementing all user interface elements"
+    },
+    "date": {
+      "shortDescription": "dating site comparator",
+      "description": "I was the main person responsible for coding the user interface"
+    },
+    "loan": {
+      "shortDescription": "ranking of the best loans",
+      "description": "I was the main person responsible for coding the user interface"
+    },
+    "casino": {
+      "shortDescription": "ranking of the best online casinos",
+      "description": "I was the main person responsible for coding the user interface"
+    },
+    "portfolio": {
+      "shortDescription": "project of the previous version of the portfolio site",
+      "description": "Complete responsibility for the code and implementation of the project"
+    },
+    "meganFisher": {
+      "shortDescription": "advertising agency project",
+      "description": "Too old to elaborate"
+    },
+    "polind": {
+      "shortDescription": "travel agency project",
+      "description": "Too old to elaborate"
+    },
+    "agency": {
+      "shortDescription": "travel agency project",
+      "description": "Too old to elaborate"
+    },
+    "dietClinic": {
+      "shortDescription": "diet clinic project",
+      "description": "Too old to elaborate"
+    },
+    "todo": {
+      "shortDescription": "to-do list project",
+      "description": "Too old to elaborate"
+    },
+    "api": {
+      "shortDescription": "fetching data from an external API",
+      "description": "Too old to elaborate"
+    }
   }
 }

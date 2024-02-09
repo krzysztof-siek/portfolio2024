@@ -1,4 +1,4 @@
-import {NgModule} from '@angular/core';
+import {CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
@@ -19,6 +19,7 @@ import {ContactComponent} from "./sections/contact/contact.component";
 import {HomeComponent} from "./sections/home/home.component";
 import {SocialsComponent} from "./shared/socials/socials.component";
 import {MatProgressBar} from "@angular/material/progress-bar";
+import {MatIcon} from "@angular/material/icon";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -28,7 +29,8 @@ const MATERIALS_COMPONENTS = [
   MatButtonModule,
   MatInputModule,
   MatSelectModule,
-  MatProgressBar
+  MatProgressBar,
+  MatIcon
 ]
 
 @NgModule({
@@ -58,7 +60,8 @@ const MATERIALS_COMPONENTS = [
   providers: [
     provideAnimationsAsync()
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule {
 }

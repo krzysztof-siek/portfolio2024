@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
+import {register} from 'swiper/element/bundle';
 
 @Component({
   selector: 'app-root',
@@ -7,13 +8,10 @@ import {TranslateService} from "@ngx-translate/core";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(private translate: TranslateService) {
-    translate.setDefaultLang('pl');
-  }
   title = 'portfolio2024';
 
-  changeLanguage(lang: string) {
-    this.translate.use(lang);
+  constructor(private translate: TranslateService) {
+    register();
+    translate.setDefaultLang('pl');
   }
-
 }
