@@ -1,0 +1,25 @@
+@import "src/variables";
+
+.hobby-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .img-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid $yellow;
+    overflow: hidden;
+    color: white;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  span {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+}

@@ -11,7 +11,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {NavbarComponent} from "./navbar/navbar.component";
-import {CommonModule} from "@angular/common";
+import {CommonModule, NgOptimizedImage} from "@angular/common";
 import {AboutComponent} from "./sections/about/about.component";
 import {SkillsComponent} from "./sections/skills/skills.component";
 import {ProjectsComponent} from "./sections/projects/projects.component";
@@ -22,6 +22,7 @@ import {MatProgressBar} from "@angular/material/progress-bar";
 import {MatIcon} from "@angular/material/icon";
 import {ReactiveFormsModule} from "@angular/forms";
 import {FooterComponent} from "./footer/footer.component";
+import {HobbyComponent} from "./sections/hobby/hobby.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -44,6 +45,7 @@ const COMPONENTS = [
   ProjectsComponent,
   ContactComponent,
   SocialsComponent,
+  HobbyComponent,
   FooterComponent
 ]
 
@@ -63,7 +65,8 @@ const COMPONENTS = [
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    NgOptimizedImage
   ],
   providers: [
     provideAnimationsAsync()

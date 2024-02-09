@@ -1,0 +1,18 @@
+<section id="hobby">
+  <div class="container">
+    <div class="section-title">
+      <h4 class="title">
+        {{'hobby.title' | translate | uppercase}}
+        <h2 class="subtitle">{{'hobby.title' | translate | uppercase}}</h2>
+      </h4>
+    </div>
+    <div class="row">
+      <div *ngFor="let hobby of hobbyList" class="hobby-box">
+        <div class="img-box">
+          <img [src]="'assets/images/ziomek/' + hobby.name + '.png'">
+        </div>
+        <span>{{'hobby.' + hobby.name | translate}}</span>
+      </div>
+    </div>
+  </div>
+</section>

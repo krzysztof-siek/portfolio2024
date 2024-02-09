@@ -16,8 +16,9 @@ export class NavbarComponent {
     {id: 0, translationKey: "home", value: 'home', active: true, href: "#home"},
     {id: 1, translationKey: "about", value: 'about', active: false, href: "#about"},
     {id: 2, translationKey: "skills", value: 'skills', active: false, href: "#skills"},
-    {id: 3, translationKey: "projects", value: 'projects', active: false, href: "#projects"},
-    {id: 4, translationKey: "contact", value: 'contact', active: false, href: "#contact"},
+    {id: 3, translationKey: "hobby", value: 'hobby', active: false, href: "#hobby"},
+    {id: 4, translationKey: "projects", value: 'projects', active: false, href: "#projects"},
+    {id: 5, translationKey: "contact", value: 'contact', active: false, href: "#contact"},
   ];
   selectedCountry: LanguageEnum = LanguageEnum.POLISH;
   languages: LanguageInterface[] = [
