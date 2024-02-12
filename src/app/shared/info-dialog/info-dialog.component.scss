@@ -1,9 +1,5 @@
 @import "src/variables";
 
-.dialog {
-
-}
-
 .dialog-wrapper {
   padding: 20px;
   position: relative;
@@ -11,7 +7,7 @@
   p {
     font-size: 24px;
     line-height: 42px;
-    text-wrap: normal;
+    white-space: pre-wrap;
   }
 
   .icon-wrapper {

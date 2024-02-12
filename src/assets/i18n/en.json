@@ -44,6 +44,9 @@
     "enterSubject": "Enter subject",
     "message": "Message"
   },
+  "infoModal": {
+    "message": "If you are interested in collaboration and would like to receive my CV, please use the contact form.\nBest regards."
+  },
   "projects": {
     "title": "Projects",
     "for": "For",

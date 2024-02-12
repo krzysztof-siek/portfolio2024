@@ -9,4 +9,5 @@ import {ScrollService} from "../../services/scroll.service";
 export class HomeComponent {
   constructor(public scrollService: ScrollService) {
   }
+  
 }

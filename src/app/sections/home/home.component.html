@@ -4,7 +4,7 @@
       <h3 class="welcome">{{'home.welcome' | translate}}</h3>
       <h2 class="name">Krzysztof Siek</h2>
       <h4 class="position">Frontend developer</h4>
-      <button (click)="scrollService.scrollTo('contact')" class="primary-button"
+      <button (click)="scrollService.scrollTo('contact')" (mouseenter)="animateText()" class="primary-button"
               mat-raised-button>{{'buttons.hireMe' | translate}}</button>
       <div class="app-socials">
         <app-socials></app-socials>

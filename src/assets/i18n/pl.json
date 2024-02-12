@@ -44,6 +44,9 @@
     "enterSubject": "Podaj temat",
     "message": "Wiadomość"
   },
+  "infoModal": {
+    "message": "Jeśli jesteś zainteresowany współpracą i chciałbyś otrzymać moje CV, prosze użyj formularz kontaktu\nPozdrawiam"
+  },
   "projects": {
     "title": "Projekty",
     "for": "dla",
