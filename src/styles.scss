@@ -46,9 +46,20 @@ body {
   background-color: $yellow !important;
   color: black;
   font-size: 16px !important;
-  padding: 28px 34px !important;
+  padding: 26px 34px !important;
   border-radius: 50px !important;
+  min-width: 240px !important;
+  border: 2px solid $yellow !important;
+  text-transform: capitalize !important;
+
+  &:hover {
+    transition: .3s;
+    background-color: black !important;
+    color: white !important;
+    border: 2px solid $yellow !important;
+  }
 }
+
 
 section {
   background-color: black;

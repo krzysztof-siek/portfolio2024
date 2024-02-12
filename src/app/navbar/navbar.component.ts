@@ -1,20 +1,10 @@
 import {Component, HostListener} from '@angular/core';
 import {MenuInterface} from "../interfaces/menu.interface";
-import {TranslateService} from "@ngx-translate/core";
-import {LanguageEnum} from "../enums/language.enum";
-import {LanguageInterface} from "../interfaces/language.interface";
-import {MAT_SELECT_CONFIG} from "@angular/material/select";
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss',
-  providers: [
-    {
-      provide: MAT_SELECT_CONFIG,
-      useValue: {overlayPanelClass: 'language-select-panel'}
-    }
-  ],
+  styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
   isMenuOpen: boolean = true;
@@ -27,15 +17,10 @@ export class NavbarComponent {
     {id: 4, translationKey: "projects", value: 'projects', active: false, href: "#projects"},
     {id: 5, translationKey: "contact", value: 'contact', active: false, href: "#contact"},
   ];
-  selectedCountry: LanguageEnum = LanguageEnum.POLISH;
-  languages: LanguageInterface[] = [
-    {name: 'Polish', value: LanguageEnum.POLISH, image: 'assets/images/countries/pl.png'},
-    {name: 'English', value: LanguageEnum.ENGLISH, image: 'assets/images/countries/en.png'}
-  ];
   private openingMenuSound!: HTMLAudioElement;
   private closingMenuSound!: HTMLAudioElement;
 
-  constructor(private translate: TranslateService) {
+  constructor() {
     this.openingMenuSound = new Audio('assets/sounds/open.mp3');
     this.closingMenuSound = new Audio('assets/sounds/close.mp3');
   }
@@ -54,15 +39,6 @@ export class NavbarComponent {
       return bounds.top <= halfViewportHeight && bounds.bottom >= halfViewportHeight;
     }
     return false;
-  }
-
-  getCountryImage(value: string): string {
-    const country: LanguageInterface | undefined = this.languages.find(c => c.value === value);
-    return country ? country.image : '';
-  }
-
-  changeLanguage(lang: string) {
-    this.translate.use(lang);
   }
 
   handleMenu(): void {

@@ -1,0 +1,23 @@
+@import "src/variables";
+
+.language-wrapper {
+  height: 26px;
+  width: 26px;
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+
+mat-option {
+  padding: 0 5px !important;
+
+  img {
+    border-radius: 50px;
+    border: 1px solid $grey;
+  }
+}
