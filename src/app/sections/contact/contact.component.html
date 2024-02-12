@@ -47,7 +47,7 @@
           <mat-label>{{'contact.message' | translate}}</mat-label>
           <textarea formControlName="message" matInput></textarea>
         </mat-form-field>
-        <button [disabled]="!contactForm.valid" class="yellow" mat-raised-button type="submit">
+        <button [disabled]="!contactForm.valid" class="primary-button" mat-raised-button type="submit">
           {{'buttons.send' | translate}}
         </button>
       </form>

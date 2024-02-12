@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {ScrollService} from "../../services/scroll.service";
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,6 @@ import {Component} from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  constructor(public scrollService: ScrollService) {
+  }
 }

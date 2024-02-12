@@ -29,7 +29,6 @@
       margin: 0 10px;
       font-size: 16px;
       cursor: pointer;
-      //text-transform: uppercase;
 
       a {
         color: inherit;
@@ -49,6 +48,14 @@
       &.active-link {
         color: $yellow;
       }
+    }
+  }
+
+  .logo {
+    max-width: 180px;
+
+    img {
+      width: 100%;
     }
   }
 

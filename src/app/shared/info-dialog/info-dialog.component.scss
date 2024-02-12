@@ -1,0 +1,35 @@
+@import "src/variables";
+
+.dialog {
+
+}
+
+.dialog-wrapper {
+  padding: 20px;
+  position: relative;
+
+  p {
+    font-size: 24px;
+    line-height: 42px;
+    text-wrap: normal;
+  }
+
+  .icon-wrapper {
+    padding: 10px;
+    background-color: $yellow;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(30px, -30px);
+    cursor: pointer;
+
+    mat-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+    }
+  }
+}
+

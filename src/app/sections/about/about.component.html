@@ -18,8 +18,10 @@
         <p class="cooperation">{{'about.cooperation' | translate}}</p>
         <img alt="" loading="lazy" src="assets/images/others/sign.png">
         <div class="buttons">
-          <button class="yellow" mat-raised-button>{{'buttons.downloadCv' | translate}}</button>
-          <button class="yellow" mat-raised-button>{{'buttons.projects' | translate}}</button>
+          <button (click)="openModal()" class="primary-button"
+                  mat-raised-button>{{'buttons.downloadCv' | translate}}</button>
+          <button (click)="scrollService.scrollTo('projects')" class="primary-button"
+                  mat-raised-button>{{'buttons.projects' | translate}}</button>
         </div>
       </div>
     </div>

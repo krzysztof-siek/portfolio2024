@@ -3,11 +3,18 @@ import {MenuInterface} from "../interfaces/menu.interface";
 import {TranslateService} from "@ngx-translate/core";
 import {LanguageEnum} from "../enums/language.enum";
 import {LanguageInterface} from "../interfaces/language.interface";
+import {MAT_SELECT_CONFIG} from "@angular/material/select";
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrl: './navbar.component.scss',
+  providers: [
+    {
+      provide: MAT_SELECT_CONFIG,
+      useValue: {overlayPanelClass: 'language-select-panel'}
+    }
+  ],
 })
 export class NavbarComponent {
   isMenuOpen: boolean = true;

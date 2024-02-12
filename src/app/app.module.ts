@@ -23,6 +23,7 @@ import {MatIcon} from "@angular/material/icon";
 import {ReactiveFormsModule} from "@angular/forms";
 import {FooterComponent} from "./footer/footer.component";
 import {HobbyComponent} from "./sections/hobby/hobby.component";
+import {MatDialogModule} from "@angular/material/dialog";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -33,7 +34,8 @@ const MATERIALS_COMPONENTS = [
   MatInputModule,
   MatSelectModule,
   MatProgressBar,
-  MatIcon
+  MatIcon,
+  MatDialogModule
 ]
 
 const COMPONENTS = [

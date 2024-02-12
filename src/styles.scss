@@ -34,7 +34,7 @@ body {
   }
 }
 
-.cdk-overlay-pane {
+.language-select-panel {
   width: 40px !important;
 
   .mat-pseudo-checkbox {
@@ -42,11 +42,12 @@ body {
   }
 }
 
-.yellow {
+.primary-button {
   background-color: $yellow !important;
   color: black;
   font-size: 16px !important;
-  padding: 30px 40px !important;
+  padding: 28px 34px !important;
+  border-radius: 50px !important;
 }
 
 section {
@@ -152,6 +153,14 @@ mat-form-field {
 
   .mdc-line-ripple {
     display: none;
+  }
+}
+
+.info-dialog-custom-class {
+  .mat-mdc-dialog-surface {
+    border-top-right-radius: 50px !important;
+    background-color: $yellow !important;
+    overflow: visible;
   }
 }
 
