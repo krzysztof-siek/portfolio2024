@@ -34,18 +34,42 @@
         <mat-form-field class="custom-mat-form-field">
           <mat-label>{{'contact.enterName' | translate}}</mat-label>
           <input formControlName="name" matInput>
+          <mat-error *ngIf="contactForm.get('name')?.hasError('required')">
+            {{'errors.required' | translate}}
+          </mat-error>
+          <mat-error *ngIf="contactForm.get('name')?.hasError('minlength')">
+            {{'errors.minLength' | translate}}
+          </mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>{{'contact.enterEmail' | translate}}</mat-label>
           <input formControlName="email" matInput>
+          <mat-error *ngIf="contactForm.get('email')?.hasError('required')">
+            {{'errors.required' | translate}}
+          </mat-error>
+          <mat-error *ngIf="contactForm.get('email')?.hasError('email')">
+            {{'errors.email' | translate}}
+          </mat-error>
         </mat-form-field>
         <mat-form-field>
           <mat-label>{{'contact.enterSubject' | translate}}</mat-label>
           <input formControlName="subject" matInput>
+          <mat-error *ngIf="contactForm.get('subject')?.hasError('required')">
+            {{'errors.required' | translate}}
+          </mat-error>
+          <mat-error *ngIf="contactForm.get('subject')?.hasError('minlength')">
+            {{'errors.minLength' | translate}}
+          </mat-error>
         </mat-form-field>
         <mat-form-field class="example-full-width">
           <mat-label>{{'contact.message' | translate}}</mat-label>
           <textarea formControlName="message" matInput></textarea>
+          <mat-error *ngIf="contactForm.get('message')?.hasError('required')">
+            {{'errors.required' | translate}}
+          </mat-error>
+          <mat-error *ngIf="contactForm.get('message')?.hasError('minlength')">
+            {{'errors.minLength10' | translate}}
+          </mat-error>
         </mat-form-field>
         <button [disabled]="!contactForm.valid" class="primary-button" mat-raised-button type="submit">
           {{'buttons.send' | translate}}

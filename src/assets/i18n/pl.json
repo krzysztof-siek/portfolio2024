@@ -13,6 +13,12 @@
     "projects": "Projekty",
     "send": "Wyślij"
   },
+  "errors": {
+    "required": "Pole wymagane",
+    "email": "Niepoprawny adres e-mail",
+    "minLength": "Minimalna długość to 3 znaki",
+    "minLength10": "Minimalna długość to 10 znaków"
+  },
   "home": {
     "welcome": "Cześć, jestem"
   },

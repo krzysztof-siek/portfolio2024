@@ -1,7 +1,5 @@
 <div [ngClass]="{'sticky-nav': isSticky}" class="nav-wrapper">
-  <a class="logo" href="#home">
-    <img alt="logo" src="assets/images/others/icon.png">
-  </a>
+  <app-logo></app-logo>
   <nav>
     <ul [ngClass]="{'is-active': isMenuOpen}" class="menu">
       <li *ngFor="let element of navMenu"
@@ -12,7 +10,7 @@
         </a>
       </li>
       <app-country-select></app-country-select>
-      
+
     </ul>
     <button (click)="handleMenu()" [ngClass]="{'is-active': isMenuOpen, 'hamburger--spin': true}"
             class="hamburger">

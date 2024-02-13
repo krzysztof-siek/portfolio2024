@@ -25,6 +25,8 @@ import {FooterComponent} from "./footer/footer.component";
 import {HobbyComponent} from "./sections/hobby/hobby.component";
 import {MatDialogModule} from "@angular/material/dialog";
 import {CountrySelectComponent} from "./navbar/country-select/country-select.component";
+import {LoaderComponent} from "./shared/loader/loader.component";
+import {LogoComponent} from "./navbar/logo/logo.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -70,7 +72,9 @@ const COMPONENTS = [
         deps: [HttpClient]
       }
     }),
-    NgOptimizedImage
+    NgOptimizedImage,
+    LoaderComponent,
+    LogoComponent
   ],
   providers: [
     provideAnimationsAsync()

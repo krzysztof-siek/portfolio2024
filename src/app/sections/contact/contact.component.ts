@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {ContactInterface} from "../../interfaces/contact.interface";
-import {FormControl, FormGroup} from "@angular/forms";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-contact',
@@ -15,14 +15,14 @@ export class ContactComponent {
   ]
 
   contactForm = new FormGroup({
-    // TODO: zastanowić się nad walidację
-    name: new FormControl('',),
-    email: new FormControl('',),
-    subject: new FormControl('',),
-    message: new FormControl('',)
+    // TODO: Podłączyć wysyłanie formularza pod netifly
+    name: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    subject: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    message: new FormControl('', [Validators.required, Validators.minLength(10)])
   })
 
   onSubmit(): void {
-    console.log('dziala')
+    console.log(this.contactForm.value)
   }
 }

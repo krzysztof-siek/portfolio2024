@@ -13,6 +13,12 @@
     "projects": "Projects",
     "send": "Send"
   },
+  "errors": {
+    "required": "Required field",
+    "email": "Please enter a valid email address",
+    "minLength": "Minimum length is 3 characters",
+    "minLength10": "Minimum length is 10 characters"
+  },
   "home": {
     "welcome": "Hey, i'm"
   },
