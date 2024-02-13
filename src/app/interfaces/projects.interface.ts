@@ -1,5 +1,4 @@
 export interface ProjectsInterface {
-  id: number;
   name: string;
   image: string;
   translationKey?: string;

@@ -22,8 +22,8 @@ export class ProjectsComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this._initSwiper()
     this.getProjects();
+    this._initSwiper()
   }
 
   getProjects() {
@@ -52,7 +52,7 @@ export class ProjectsComponent implements AfterViewInit {
 
     swiperEl.initialize()
 
-    if (this.swiper) this.swiper.currentBreakpoint = false // Breakpoint fixes
+    if (this.swiper) this.swiper.currentBreakpoint = false
     this.swiper = this._swiperRef?.nativeElement.swiper
 
     this.swiper?.off('slideChange')

@@ -13,13 +13,13 @@
               <img [src]="'assets/images/projects/' + project.image + '.png'" loading="lazy">
             </div>
             <div class="info">
-              <h4 class="info-title">{{project.name}}</h4>
-              <h5 class="short-desc">{{project.name}}
-                - {{('projects.' + project.translationKey + '.shortDescription') | translate}} -
-                <span>{{'projects.for' | translate}} {{project.for}}</span>
+              <h4 class="info-title">{{ project.name }}</h4>
+              <h5 class="short-desc">
+                {{ ('projects.' + project.translationKey + '.shortDescription') | translate }}
+                <span *ngIf="project.for">- {{ 'projects.for' | translate }} {{ project.for }}</span>
               </h5>
-              <p class="description">{{('projects.' + project.translationKey + '.description') | translate}}</p>
-              <p class="year">{{'projects.year' | translate}}: <span>{{project.year}}</span></p>
+              <p class="description">{{ ('projects.' + project.translationKey + '.description') | translate }}</p>
+              <p class="year">{{ 'projects.year' | translate }}: <span>{{ project.year }}</span></p>
               <div class="buttons">
                 <a *ngIf="project.liveLink" [href]="project.liveLink" class="box" target="_blank">
                   <mat-icon fontIcon="computer"></mat-icon>
