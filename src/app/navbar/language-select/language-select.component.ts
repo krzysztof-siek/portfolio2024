@@ -5,9 +5,9 @@ import {TranslateService} from "@ngx-translate/core";
 import {MAT_SELECT_CONFIG} from "@angular/material/select";
 
 @Component({
-  selector: 'app-country-select',
-  templateUrl: './country-select.component.html',
-  styleUrl: './country-select.component.scss',
+  selector: 'app-language-select',
+  templateUrl: './language-select.component.html',
+  styleUrl: './language-select.component.scss',
   providers: [
     {
       provide: MAT_SELECT_CONFIG,
@@ -15,7 +15,7 @@ import {MAT_SELECT_CONFIG} from "@angular/material/select";
     }
   ],
 })
-export class CountrySelectComponent implements OnInit {
+export class LanguageSelectComponent implements OnInit {
   selectedCountry: LanguageEnum = LanguageEnum.POLISH;
   languages: LanguageInterface[] = [
     {name: 'Polish', value: LanguageEnum.POLISH, image: 'assets/images/countries/pl.png'},

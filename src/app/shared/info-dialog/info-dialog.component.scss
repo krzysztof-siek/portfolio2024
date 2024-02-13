@@ -5,7 +5,7 @@
   position: relative;
 
   p {
-    font-size: 24px;
+    font-size: $size24;
     line-height: 42px;
     white-space: pre-wrap;
   }
@@ -24,7 +24,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 30px;
+      font-size: $size30;
     }
   }
 }

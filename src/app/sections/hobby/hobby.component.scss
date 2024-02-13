@@ -5,6 +5,12 @@
   flex-direction: column;
   align-items: center;
 
+  &:hover {
+    span {
+      color: $yellow !important;
+    }
+  }
+
   .img-box {
     width: 200px;
     height: 200px;
@@ -12,14 +18,10 @@
     border: 1px solid $yellow;
     overflow: hidden;
     color: white;
-
+    margin-bottom: 20px;
+    
     img {
       width: 100%;
     }
-  }
-
-  span {
-    font-size: 30px;
-    margin-top: 30px;
   }
 }

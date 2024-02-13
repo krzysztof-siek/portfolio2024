@@ -1,17 +1,15 @@
 <div class="home" id="home">
   <div class="container container-row">
     <div class="info">
-      <h3 class="welcome">{{'home.welcome' | translate}}</h3>
-      <h2 class="name">Krzysztof Siek</h2>
-      <h4 class="position">Frontend developer</h4>
-      <!--      <button (click)="scrollService.scrollTo('contact')" (mouseenter)="animateText()" class="primary-button"-->
-      <!--              mat-raised-button>{{'buttons.hireMe' | translate}}</button>-->
-      <button (click)="scrollService.scrollTo('contact')" (mouseenter)="animateText()" (mouseleave)="onMouseLeave()"
+      <h3 class="main-text size30 yellow">{{'home.welcome' | translate}}</h3>
+      <h2 class="main-text size120 white">Krzysztof Siek</h2>
+      <h4 class="main-text">Frontend developer</h4>
+      <button (click)="scrollService.scrollTo('contact')"
+              (mouseenter)="animateText()"
+              (mouseleave)="onMouseLeave()"
               class="primary-button"
               mat-raised-button>{{buttonText | translate}}</button>
-      <div class="app-socials">
-        <app-socials></app-socials>
-      </div>
+      <app-socials class="app-socials"></app-socials>
     </div>
     <div class="photo">
       <img alt="home ziomek photo" loading="lazy" src="assets/images/ziomek/home.png">

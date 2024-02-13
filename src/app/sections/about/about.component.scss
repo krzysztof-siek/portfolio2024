@@ -2,37 +2,7 @@
 
 .info {
   flex: 1;
-
-  .welcome {
-    font-size: 36px;
-    color: $white-text;
-    font-weight: 400;
-    font-family: 'Inter', sans-serif;
-    //TODO: Font family powinien być ustawiony w info i dziedziczyć, ale nie działa - poprawić
-  }
-
-  .profession {
-    font-size: 24px;
-    color: $yellow;
-    font-family: 'Inter', sans-serif;
-    font-weight: 300;
-  }
-
-  .description {
-    font-size: 16px;
-    line-height: 24px;
-    color: $grey;
-    font-family: 'Inter', sans-serif;
-  }
-
-  .cooperation {
-    color: $yellow;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 1px;
-    margin-top: 30px;
-  }
+  
 
   img {
     margin-top: 20px;

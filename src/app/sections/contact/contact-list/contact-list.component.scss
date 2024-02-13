@@ -1,0 +1,62 @@
+@import "src/variables";
+
+.contact-wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+
+    .photo {
+      width: 150px;
+      height: 150px;
+      border: 1px solid $yellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+        mat-icon {
+          color: $white;
+          border-color: $yellow;
+        }
+
+        .description {
+          color: $yellow;
+        }
+      }
+
+
+      mat-icon {
+        border: 1px solid $grey;
+        color: $grey;
+        padding: 10px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+
+      .box-row {
+        display: flex;
+        flex-direction: column;
+
+        .box-title {
+          color: white;
+        }
+      }
+    }
+  }
+}

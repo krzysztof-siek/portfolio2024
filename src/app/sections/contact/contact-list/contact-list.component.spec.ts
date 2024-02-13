@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CountrySelectComponent } from './country-select.component';
+import { ContactListComponent } from './contact-list.component';
 
-describe('CountrySelectComponent', () => {
-  let component: CountrySelectComponent;
-  let fixture: ComponentFixture<CountrySelectComponent>;
+describe('ContactListComponent', () => {
+  let component: ContactListComponent;
+  let fixture: ComponentFixture<ContactListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CountrySelectComponent]
+      imports: [ContactListComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CountrySelectComponent);
+    fixture = TestBed.createComponent(ContactListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

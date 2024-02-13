@@ -11,7 +11,7 @@ import {finalize, Subject, takeUntil, timer} from "rxjs";
 export class HomeComponent {
   buttonText = 'buttons.hireMe';
   private originalText = 'buttons.hireMe';
-  private destroy$ = new Subject<void>();
+  private destroy$: Subject<void> = new Subject<void>();
 
   constructor(public scrollService: ScrollService,
               private translate: TranslateService) {
@@ -46,7 +46,7 @@ export class HomeComponent {
   }
 
   private generateRandomString(length: number): string {
-    const characters = 'abcdefghijklmnopqrstuvwxyz';
+    const characters: string = 'abcdefghijklmnopqrstuvwxyz';
     return Array.from({length}).map(() => characters.charAt(Math.floor(Math.random() * characters.length))).join('');
   }
 }

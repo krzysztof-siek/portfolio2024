@@ -24,9 +24,13 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {FooterComponent} from "./footer/footer.component";
 import {HobbyComponent} from "./sections/hobby/hobby.component";
 import {MatDialogModule} from "@angular/material/dialog";
-import {CountrySelectComponent} from "./navbar/country-select/country-select.component";
+import {LanguageSelectComponent} from "./navbar/language-select/language-select.component";
 import {LoaderComponent} from "./shared/loader/loader.component";
 import {LogoComponent} from "./navbar/logo/logo.component";
+import {SectionTitleComponent} from "./shared/section-title/section-title.component";
+import {ContactListComponent} from "./sections/contact/contact-list/contact-list.component";
+import {MapComponent} from "./sections/contact/map/map.component";
+import {ContactFormComponent} from "./sections/contact/contact-form/contact-form.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -44,7 +48,7 @@ const MATERIALS_COMPONENTS = [
 const COMPONENTS = [
   AppComponent,
   NavbarComponent,
-  CountrySelectComponent,
+  LanguageSelectComponent,
   HomeComponent,
   AboutComponent,
   SkillsComponent,
@@ -74,7 +78,11 @@ const COMPONENTS = [
     }),
     NgOptimizedImage,
     LoaderComponent,
-    LogoComponent
+    LogoComponent,
+    SectionTitleComponent,
+    ContactListComponent,
+    MapComponent,
+    ContactFormComponent
   ],
   providers: [
     provideAnimationsAsync()

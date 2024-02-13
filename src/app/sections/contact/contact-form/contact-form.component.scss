@@ -1,0 +1,16 @@
+@import "src/variables";
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  button {
+    margin-left: auto;
+    min-width: 50% !important;
+  }
+}
+
+input {
+  caret-color: $yellow !important;
+}

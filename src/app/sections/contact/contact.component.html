@@ -1,80 +1,10 @@
 <section id="contact">
   <div class="container">
-    <div class="section-title">
-      <h4 class="title">
-        {{'contact.title' | translate | uppercase}}
-        <h2 class="subtitle">{{'contact.title' | translate | uppercase}}</h2>
-      </h4>
-    </div>
-    <div class="contact-wrapper">
-      <div class="contact-info">
-        <div class="photo">
-          <img alt="contact ziomek photo" src="assets/images/ziomek/contact.png">
-        </div>
-        <div *ngFor="let contact of contactList" class="box">
-          <mat-icon>{{contact.icon}}</mat-icon>
-          <div class="box-row">
-            <span class="box-title">{{'contact.' + contact.name | translate}}</span>
-            <span class="box-info">{{contact.value}}</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-section-title section="contact"></app-section-title>
+    <app-contact-list></app-contact-list>
     <div class="row">
-      <div class="map">
-        <iframe
-          allowfullscreen=""
-          height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43644.6650283425!2d16.90550856790745!3d52.399417124612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b09f060c015%3A0x8ba5653d2bad02f1!2sKatowicka%2073A%2C%2061-131%20Pozna%C5%84!5e0!3m2!1spl!2spl!4v1707467761610!5m2!1spl!2spl"
-          style="border:0;"
-          width="600"></iframe>
-      </div>
-
-      <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="form">
-        <mat-form-field class="custom-mat-form-field">
-          <mat-label>{{'contact.enterName' | translate}}</mat-label>
-          <input formControlName="name" matInput>
-          <mat-error *ngIf="contactForm.get('name')?.hasError('required')">
-            {{'errors.required' | translate}}
-          </mat-error>
-          <mat-error *ngIf="contactForm.get('name')?.hasError('minlength')">
-            {{'errors.minLength' | translate}}
-          </mat-error>
-        </mat-form-field>
-        <mat-form-field>
-          <mat-label>{{'contact.enterEmail' | translate}}</mat-label>
-          <input formControlName="email" matInput>
-          <mat-error *ngIf="contactForm.get('email')?.hasError('required')">
-            {{'errors.required' | translate}}
-          </mat-error>
-          <mat-error *ngIf="contactForm.get('email')?.hasError('email')">
-            {{'errors.email' | translate}}
-          </mat-error>
-        </mat-form-field>
-        <mat-form-field>
-          <mat-label>{{'contact.enterSubject' | translate}}</mat-label>
-          <input formControlName="subject" matInput>
-          <mat-error *ngIf="contactForm.get('subject')?.hasError('required')">
-            {{'errors.required' | translate}}
-          </mat-error>
-          <mat-error *ngIf="contactForm.get('subject')?.hasError('minlength')">
-            {{'errors.minLength' | translate}}
-          </mat-error>
-        </mat-form-field>
-        <mat-form-field class="example-full-width">
-          <mat-label>{{'contact.message' | translate}}</mat-label>
-          <textarea formControlName="message" matInput></textarea>
-          <mat-error *ngIf="contactForm.get('message')?.hasError('required')">
-            {{'errors.required' | translate}}
-          </mat-error>
-          <mat-error *ngIf="contactForm.get('message')?.hasError('minlength')">
-            {{'errors.minLength10' | translate}}
-          </mat-error>
-        </mat-form-field>
-        <button [disabled]="!contactForm.valid" class="primary-button" mat-raised-button type="submit">
-          {{'buttons.send' | translate}}
-        </button>
-      </form>
+      <app-map class="map"></app-map>
+      <app-contact-form class="form"></app-contact-form>
     </div>
   </div>
 </section>

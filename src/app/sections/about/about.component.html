@@ -1,27 +1,25 @@
 <section id="about">
   <div class="container">
-    <div class="section-title">
-      <h4 class="title">
-        {{'about.title' | translate | uppercase}}
-        <h2 class="subtitle">{{'about.title' | translate | uppercase}}</h2>
-      </h4>
-    </div>
+    <app-section-title section="about"></app-section-title>
     <div class="row">
       <div class="photo">
         <img alt="ziomek photo" loading="lazy" src="assets/images/ziomek/about.png">
       </div>
       <div class="info">
-        <h3 class="welcome">Krzysztof Siek</h3>
-        <h4 class="profession">Frontend developer</h4>
+        <h3 class="main-text white">Krzysztof Siek</h3>
+        <h4 class="main-text size24 yellow">Frontend developer</h4>
         <p class="description">{{'about.description' | translate}}</p>
         <p class="description">{{'about.characteristics' | translate}}</p>
-        <p class="cooperation">{{'about.cooperation' | translate}}</p>
+        <p class="main-text size24 yellow bold">{{'about.cooperation' | translate}}</p>
         <img alt="sign image" loading="lazy" src="assets/images/others/sign.png">
         <div class="buttons">
-          <button (click)="openModal()" class="primary-button"
-                  mat-raised-button>{{'buttons.downloadCv' | translate}}</button>
-          <button (click)="scrollService.scrollTo('projects')" class="primary-button"
-                  mat-raised-button>{{'buttons.projects' | translate}}</button>
+          <button (click)="openModal()" class="primary-button" mat-raised-button>
+            {{'buttons.downloadCv' | translate}}
+          </button>
+          <button (click)="scrollService.scrollTo('projects')"
+                  class="primary-button" mat-raised-button>
+            {{'buttons.projects' | translate}}
+          </button>
         </div>
       </div>
     </div>
