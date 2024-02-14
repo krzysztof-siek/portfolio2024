@@ -8,6 +8,9 @@ form {
   button {
     margin-left: auto;
     min-width: 50% !important;
+    @media (max-width: $laptop) {
+      margin-left: 0;
+    }
   }
 }
 

@@ -8,6 +8,10 @@
   .contact-info {
     display: flex;
     justify-content: space-between;
+    @media (max-width: $laptop) {
+      flex-direction: column;
+      align-items: center;
+    }
 
     .photo {
       width: 150px;
@@ -18,6 +22,9 @@
       align-items: center;
       border-radius: 50%;
       overflow: hidden;
+      @media (max-width: $laptop) {
+        margin-bottom: 30px;
+      }
 
       img {
         height: 100%;
@@ -28,6 +35,19 @@
       display: flex;
       align-items: center;
       cursor: pointer;
+      @media (max-width: $laptop) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        mat-icon {
+          color: $white;
+          border-color: $yellow;
+        }
+
+        .description {
+          color: $yellow;
+        }
+      }
 
       &:hover {
         mat-icon {
@@ -47,11 +67,17 @@
         padding: 10px;
         border-radius: 50%;
         margin-right: 20px;
+        @media (max-width: $laptop) {
+          margin: 0;
+        }
       }
 
       .box-row {
         display: flex;
         flex-direction: column;
+        @media (max-width: $laptop) {
+          align-items: center;
+        }
 
         .box-title {
           color: white;

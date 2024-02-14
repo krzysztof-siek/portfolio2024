@@ -2,23 +2,26 @@
 
 .info {
   flex: 1;
-  
-
-  img {
-    margin-top: 20px;
-  }
 
   .buttons {
-    margin-top: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 
     :first-child {
       margin-right: 50px;
+    }
+
+    button {
+      margin-top: 20px;
     }
   }
 }
 
 .photo {
   flex: 1;
+  margin: 0 auto;
 
   img {
     width: 100%;

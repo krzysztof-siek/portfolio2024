@@ -7,7 +7,7 @@ import {MenuInterface} from "../interfaces/menu.interface";
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  isMenuOpen: boolean = true;
+  isMenuOpen: boolean = false;
   isSticky: boolean = false;
   navMenu: MenuInterface[] = [
     {id: 0, translationKey: "home", value: 'home', active: true, href: "#home"},

@@ -9,6 +9,10 @@
   flex: 1;
   padding-left: 50px;
 
+  @media (max-width: $laptop) {
+    padding-left: 0;
+  }
+
   .skill {
     padding: 5px 0;
 

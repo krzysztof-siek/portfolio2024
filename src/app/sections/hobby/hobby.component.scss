@@ -5,6 +5,10 @@
   flex-direction: column;
   align-items: center;
 
+  @media (max-width: $laptop) {
+    margin-bottom: 50px;
+  }
+
   &:hover {
     span {
       color: $yellow !important;
@@ -19,7 +23,7 @@
     overflow: hidden;
     color: white;
     margin-bottom: 20px;
-    
+
     img {
       width: 100%;
     }

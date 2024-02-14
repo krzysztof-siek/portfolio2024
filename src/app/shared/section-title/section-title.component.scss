@@ -38,6 +38,7 @@
     }
 
     .subtitle {
+      font-family: 'Inter', sans-serif;
       position: absolute;
       top: -30px;
       left: 50%;
@@ -47,6 +48,10 @@
       white-space: nowrap;
       color: $section-subtitle;
       z-index: -1;
+
+      @media (max-width: $laptop) {
+        font-size: $size36;
+      }
     }
   }
 }

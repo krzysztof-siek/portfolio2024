@@ -4,11 +4,17 @@
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
+  @media (max-width: $laptop) {
+    display: none;
+  }
 }
 
 .form {
   width: 100%;
   margin-left: 50px;
+  @media (max-width: $laptop) {
+    margin: 0;
+  }
 }
 
 

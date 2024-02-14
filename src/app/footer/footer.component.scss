@@ -7,8 +7,15 @@ footer {
   justify-content: center;
   padding: 20px 0;
 
+
   .name {
     color: $yellow;
+  }
+}
+
+.info {
+  @media (max-width: $laptop) {
+    margin-top: 20px;
   }
 }
 
@@ -16,5 +23,8 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: $laptop) {
+    flex-direction: column-reverse;
+  }
 }
 

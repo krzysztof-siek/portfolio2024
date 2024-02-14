@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 
   .app-socials {
     margin-top: 50px;
@@ -17,6 +16,10 @@
 
   .photo {
     flex: 1;
+    max-width: 500px;
+    @media (max-width: $laptop) {
+      margin-bottom: 20px;
+    }
 
     img {
       width: 100%;
