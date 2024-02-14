@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     // TODO: Trzeba zmienić logikę wyświetlania loadera
     setTimeout(() => {
       this.isLoaded = true;
-    }, 500)
+    }, 1000)
   }
 
 

@@ -33,7 +33,10 @@ import {MapComponent} from "./sections/contact/map/map.component";
 import {ContactFormComponent} from "./sections/contact/contact-form/contact-form.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+  const path = window.location.hostname.includes('github.io')
+    ? '/portfolio2024/assets/i18n/'
+    : './assets/i18n/'
+  return new TranslateHttpLoader(http, path, '.json');
 }
 
 const MATERIALS_COMPONENTS = [

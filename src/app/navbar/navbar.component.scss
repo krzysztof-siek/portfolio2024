@@ -16,18 +16,25 @@
     background-color: rgba(0, 0, 0, .7);
     padding: 10px 30px;
     transition: ease-in-out .3s;
-
-    .is-active {
-      top: 18px;
-      @media (max-width: $laptop) {
-        top: 74px;
-      }
-    }
   }
 
   nav {
     display: flex;
     align-items: center;
+  }
+}
+
+.nav-wrapper.sticky-nav {
+  .menu {
+    top: 18px;
+  }
+
+  .is-active {
+    top: 18px;
+
+    @media (max-width: $laptop) {
+      top: 74px;
+    }
   }
 }
 
@@ -78,14 +85,10 @@
   }
 }
 
-
 .list-element {
   margin: 0 15px;
   font-size: $size16;
   cursor: pointer;
-  @media (max-width: $laptop) {
-    margin: 20px 0;
-  }
 
   a {
     color: inherit;
@@ -104,10 +107,15 @@
     padding-right: 20px;
     margin-right: 20px;
     border-right: 1px solid white;
+
     @media (max-width: $laptop) {
       border: none;
       padding-right: 0;
       margin-right: 0;
     }
+  }
+
+  @media (max-width: $laptop) {
+    margin: 20px 0;
   }
 }

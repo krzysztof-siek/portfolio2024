@@ -1,4 +1,4 @@
-import {Component, HostListener} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {MenuInterface} from "../interfaces/menu.interface";
 
 @Component({
@@ -6,9 +6,9 @@ import {MenuInterface} from "../interfaces/menu.interface";
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class NavbarComponent {
-  isMenuOpen: boolean = false;
-  isSticky: boolean = false;
+export class NavbarComponent implements OnInit {
+  isMenuOpen: boolean = true;
+  isSticky: boolean = true;
   navMenu: MenuInterface[] = [
     {id: 0, translationKey: "home", value: 'home', active: true, href: "#home"},
     {id: 1, translationKey: "about", value: 'about', active: false, href: "#about"},
@@ -23,6 +23,10 @@ export class NavbarComponent {
   constructor() {
     this.openingMenuSound = new Audio('assets/sounds/open.mp3');
     this.closingMenuSound = new Audio('assets/sounds/close.mp3');
+  }
+
+  ngOnInit() {
+    this.isMenuOpen = !window.matchMedia('(max-width: 992px)').matches;
   }
 
   @HostListener('window:scroll', ['$event'])
