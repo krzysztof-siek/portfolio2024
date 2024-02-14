@@ -1,7 +1,7 @@
-<form [formGroup]="contactForm" class="form" data-netlify="true" method="POST" name="contact2">
+<form [formGroup]="contactForm" class="form" data-netlify="true" method="POST" name="contactForm">
   <mat-form-field class="custom-mat-form-field">
     <mat-label>{{ 'contact.enterName' | translate }}</mat-label>
-    <input formControlName="name" matInput name="name">
+    <input formControlName="name" matInput name="name" required>
     <mat-error *ngIf="contactForm.get('name')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>
@@ -11,7 +11,7 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>{{ 'contact.enterEmail' | translate }}</mat-label>
-    <input formControlName="email" matInput name="email">
+    <input formControlName="email" matInput name="email" required>
     <mat-error *ngIf="contactForm.get('email')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>
@@ -21,7 +21,7 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>{{ 'contact.enterSubject' | translate }}</mat-label>
-    <input formControlName="subject" matInput name="subject">
+    <input formControlName="subject" matInput name="subject" required>
     <mat-error *ngIf="contactForm.get('subject')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>
@@ -31,7 +31,7 @@
   </mat-form-field>
   <mat-form-field class="example-full-width">
     <mat-label>{{ 'contact.message' | translate }}</mat-label>
-    <textarea formControlName="message" matInput name="message"></textarea>
+    <textarea formControlName="message" matInput name="message" required></textarea>
     <mat-error *ngIf="contactForm.get('message')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>
@@ -39,7 +39,7 @@
       {{ 'errors.minLength10' | translate }}
     </mat-error>
   </mat-form-field>
-  <input name="form-name" type="hidden" value="contact"/>
+  <input name="form-name" type="hidden" value="contactForm"/>
   <button [disabled]="!contactForm.valid" class="primary-button" mat-raised-button type="submit">
     {{ 'buttons.send' | translate }}
   </button>
