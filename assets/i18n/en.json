@@ -1,0 +1,133 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "hobby": "Hobby",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "hireMe": "Hire me!",
+    "downloadCv": "Download CV",
+    "projects": "Projects",
+    "send": "Send"
+  },
+  "errors": {
+    "required": "Required field",
+    "email": "Please enter a valid email address",
+    "minLength": "Minimum length is 3 characters",
+    "minLength10": "Minimum length is 10 characters"
+  },
+  "home": {
+    "welcome": "Hey, i'm"
+  },
+  "about": {
+    "title": "About me",
+    "description": "My name is Krzysztof, and I live in Poznań. As a front-end developer with over 4 years of experience, I specialize in creating modern web applications using the Angular framework. My projects combine aesthetics, functionality, and intuitiveness, always created with attention to the smallest details and semantics. As a perfectionist, I attach great importance to the quality of the code. I constantly strive to develop and improve my skills, which allows me to work effectively in teams and adapt to the changing requirements of projects, making my work better and better.",
+    "characteristics": "Practicial, innovative, reliable, working with full commitment",
+    "cooperation": "If you are interested in cooperation, please contact me!"
+  },
+  "skills": {
+    "title": "Skills",
+    "info-title": "Technologies and tools that I use on a daily basis",
+    "info-description": "As a skilled web developer, I specialize in using technologies such as HTML, CSS, TypeScript, and Angular to create dynamic and responsive web applications. In designing user interfaces, I apply Materials UI and Bootstrap, ensuring both efficiency and aesthetic appeal. Docker and REST API are crucial in my daily work, enabling effective and reliable communication with servers. Tools like Git and Jira are indispensable for project management and team collaboration, allowing for smooth organization and coordination."
+  },
+  "hobby": {
+    "title": "Hobby",
+    "music": "Music",
+    "gym": "Gym",
+    "travel": "Travel",
+    "bike": "Bike"
+  },
+  "contact": {
+    "title": "Contact",
+    "phone": "Phone",
+    "email": "E-mail",
+    "website": "Website",
+    "enterName": "Enter name",
+    "enterEmail": "Enter email",
+    "enterSubject": "Enter subject",
+    "message": "Message"
+  },
+  "infoModal": {
+    "message": "If you are interested in collaboration and would like to receive my CV, please use the contact form.\nBest regards."
+  },
+  "projects": {
+    "title": "Projects",
+    "for": "For",
+    "year": "Year of execution",
+    "portfolioNew": {
+      "shortDescription": "My new portfolio website",
+      "description": "Full responsibility for coding and implementing all user interface elements"
+    },
+    "vodPlus": {
+      "shortDescription": "Movie and series search engine",
+      "description": "I was the main person responsible for coding and implementing all key user interface elements"
+    },
+    "promoLovers": {
+      "shortDescription": "Search engine for promotions and promotional coupons",
+      "description": "I was the main person responsible for coding and implementing all key user interface elements"
+    },
+    "influencers": {
+      "shortDescription": "Website dedicated to influencers",
+      "description": "I was the main person responsible for coding and implementing all key user interface elements"
+    },
+    "zamienSms": {
+      "shortDescription": "Website where you can exchange SMS for money",
+      "description": "I was primarily responsible for refreshing the design of the home page visible before logging in"
+    },
+    "cdaFlix": {
+      "shortDescription": "Movie and series search engine",
+      "description": "Together with the team, I was responsible for coding and implementing all key user interface elements"
+    },
+    "hangman": {
+      "shortDescription": "Popular game created for fun",
+      "description": "Full responsibility for the code and implementation of the project"
+    },
+    "cyberpunk": {
+      "shortDescription": "Promotional website",
+      "description": "Full responsibility for coding and implementing all user interface elements"
+    },
+    "date": {
+      "shortDescription": "Dating site comparator",
+      "description": "I was the main person responsible for coding the user interface"
+    },
+    "loan": {
+      "shortDescription": "Ranking of the best loans",
+      "description": "I was the main person responsible for coding the user interface"
+    },
+    "casino": {
+      "shortDescription": "Ranking of the best online casinos",
+      "description": "I was the main person responsible for coding the user interface"
+    },
+    "portfolio": {
+      "shortDescription": "Project of the previous version of the portfolio site",
+      "description": "Complete responsibility for the code and implementation of the project"
+    },
+    "meganFisher": {
+      "shortDescription": "Advertising agency project",
+      "description": "Too old to elaborate"
+    },
+    "polind": {
+      "shortDescription": "Travel agency project",
+      "description": "Too old to elaborate"
+    },
+    "agency": {
+      "shortDescription": "Travel agency project",
+      "description": "Too old to elaborate"
+    },
+    "dietClinic": {
+      "shortDescription": "Diet clinic project",
+      "description": "Too old to elaborate"
+    },
+    "todo": {
+      "shortDescription": "To-do list project",
+      "description": "Too old to elaborate"
+    },
+    "api": {
+      "shortDescription": "Fetching data from an external API",
+      "description": "Too old to elaborate"
+    }
+  }
+}

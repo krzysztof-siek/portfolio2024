@@ -1,0 +1,133 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "O mnie",
+    "skills": "Umiejętności",
+    "projects": "Projekty",
+    "hobby": "Hobby",
+    "contact": "Kontakt"
+  },
+  "buttons": {
+    "hireMe": "Zatrudnij mnie!",
+    "downloadCv": "Pobierz CV",
+    "projects": "Projekty",
+    "send": "Wyślij"
+  },
+  "errors": {
+    "required": "Pole wymagane",
+    "email": "Niepoprawny adres e-mail",
+    "minLength": "Minimalna długość to 3 znaki",
+    "minLength10": "Minimalna długość to 10 znaków"
+  },
+  "home": {
+    "welcome": "Cześć, jestem"
+  },
+  "about": {
+    "title": "O mnie",
+    "description": "Mam na imię Krzysztof i mieszkam w Poznaniu. Jako front-end developer z ponad 4-letnim doświadczeniem, specjalizuję się w tworzeniu nowoczesnych aplikacji webowych, wykorzystując framework Angular. Moje projekty łączą estetykę, funkcjonalność i intuicyjność, są zawsze tworzone z dbałością o najdrobniejsze szczegóły i semantykę. Jako perfekcjonista, przywiązuję dużą wagę do jakości kodu. Nieustannie dążę do rozwoju i ulepszania moich umiejętności, co umożliwia mi efektywną pracę w zespołach i adaptację do zmiennych wymagań projektów, aby moje prace były coraz lepsze.",
+    "characteristics": "Praktyczny, innowacyjny, niezawodny, pracujący z pełnym zaangażowaniem",
+    "cooperation": "Jeśli jesteś zainteresowany współpracą, proszę o kontakt!"
+  },
+  "skills": {
+    "title": "Umiejętności",
+    "info-title": "Technologie i narzędzia których używam na codzień",
+    "info-description": "Jako wykwalifikowany programista, specjalizuję się w użyciu technologii, takich jak HTML, CSS, TypeScript i Angular, aby tworzyć dynamiczne i responsywne aplikacje webowe. W projektowaniu interfejsów użytkownika stosuję Materials UI oraz Bootstrap, co zapewnia zarówno efektywność, jak i estetyczny wygląd. W mojej codziennej pracy kluczowe są Docker i REST API, które umożliwiają skuteczną i niezawodną komunikację z serwerami. Do zarządzania projektami i pracy zespołowej nieodzowne są narzędzia takie jak Git i Jira, które pozwalają na sprawną organizację i koordynację działań."
+  },
+  "hobby": {
+    "title": "Hobby",
+    "music": "Muzyka",
+    "gym": "Siłownia",
+    "travel": "Podróże",
+    "bike": "Rower"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "website": "Strona www",
+    "enterName": "Podaj imię",
+    "enterEmail": "Podaj maila",
+    "enterSubject": "Podaj temat",
+    "message": "Wiadomość"
+  },
+  "infoModal": {
+    "message": "Jeśli jesteś zainteresowany współpracą i chciałbyś otrzymać moje CV, prosze użyj formularz kontaktu\nPozdrawiam"
+  },
+  "projects": {
+    "title": "Projekty",
+    "for": "dla",
+    "year": "Rok wykonania",
+    "portfolioNew": {
+      "shortDescription": "Moja nowa strona portfolio",
+      "description": "Pełna odpowiedzialność za kod i wdrożenie projektu"
+    },
+    "vodPlus": {
+      "shortDescription": "Wyszukiwarka filmów i seriali",
+      "description": "Byłem główną osobą odpowiedzialną za kodowanie i implementację wszystkich kluczowych elementów interfejsu użytkownika"
+    },
+    "promoLovers": {
+      "shortDescription": "Wyszukiwarka promocji i kuponów promocyjnych",
+      "description": "Byłem główną osobą odpowiedzialną za kodowanie i implementację wszystkich kluczowych elementów interfejsu użytkownika"
+    },
+    "influencers": {
+      "shortDescription": "Strona dedykowana influencerom",
+      "description": "Byłem główną osobą odpowiedzialną za kodowanie i implementację wszystkich kluczowych elementów interfejsu użytkownika"
+    },
+    "zamienSms": {
+      "shortDescription": "Strona na której możesz wymienić SMSy na pieniądze",
+      "description": "Byłem główną osobą odpowiedzialną za odświeżenie projektu strony głównej widocznej przed zalogowaniem"
+    },
+    "cdaFlix": {
+      "shortDescription": "Wyszukiwarka filmów i seriali",
+      "description": "Wraz z zespołem byłem odpowiedzialny za kodowanie i implementację wszystkich kluczowych elementów interfejsu użytkownika"
+    },
+    "hangman": {
+      "shortDescription": "Popularna gra stworzona dla zabawy",
+      "description": "Pełna odpowiedzialność za kod i wdrożenie projektu"
+    },
+    "cyberpunk": {
+      "shortDescription": "Strona reklanowa",
+      "description": "Pełna odpowiedzialność za kod i implementację wszystkich elementów interfejsu użytkownika"
+    },
+    "date": {
+      "shortDescription": "Sorównywarka portali randkowych",
+      "description": "Byłem główną osobą odpowiedzialną za kodowanie interfejsu użytkownika"
+    },
+    "loan": {
+      "shortDescription": "Sanking najlepszych pożyczek",
+      "description": "Byłem główną osobą odpowiedzialną za kodowanie interfejsu użytkownika"
+    },
+    "casino": {
+      "shortDescription": "Ranking najlepszych kasyn online",
+      "description": "Byłem główną osobą odpowiedzialną za kodowanie interfejsu użytkownika"
+    },
+    "portfolio": {
+      "shortDescription": "Projekt poprzedniej wersji strony portfolio",
+      "description": "Całkowita odpowiedzialność za kod i wdrożenie projektu"
+    },
+    "meganFisher": {
+      "shortDescription": "projekt agencji reklamowej",
+      "description": "Zbyt stare aby się rozpisywac"
+    },
+    "polind": {
+      "shortDescription": "projekt agencji turystycznej",
+      "description": "Zbyt stare aby się rozpisywac"
+    },
+    "agency": {
+      "shortDescription": "projekt agencji turystycznej",
+      "description": "Zbyt stare aby się rozpisywac"
+    },
+    "dietClinic": {
+      "shortDescription": "projekt kliniki dietetycznej",
+      "description": "Zbyt stare aby się rozpisywac"
+    },
+    "todo": {
+      "shortDescription": "Projekt listy rzeczy do zrobienia",
+      "description": "Zbyt stare aby się rozpisywac"
+    },
+    "api": {
+      "shortDescription": "Pobieranie danych z zewnętrznego API",
+      "description": "Zbyt stare aby się rozpisywac"
+    }
+  }
+}
