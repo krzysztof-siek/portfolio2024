@@ -11,7 +11,7 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>{{ 'contact.enterEmail' | translate }}</mat-label>
-    <input formControlName="email" matInput name="name">
+    <input formControlName="email" matInput name="email">
     <mat-error *ngIf="contactForm.get('email')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>
@@ -21,7 +21,7 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>{{ 'contact.enterSubject' | translate }}</mat-label>
-    <input formControlName="subject" matInput name="name">
+    <input formControlName="subject" matInput name="subject">
     <mat-error *ngIf="contactForm.get('subject')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>
@@ -31,7 +31,7 @@
   </mat-form-field>
   <mat-form-field class="example-full-width">
     <mat-label>{{ 'contact.message' | translate }}</mat-label>
-    <textarea formControlName="message" matInput name="name"></textarea>
+    <textarea formControlName="message" matInput name="message"></textarea>
     <mat-error *ngIf="contactForm.get('message')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>
