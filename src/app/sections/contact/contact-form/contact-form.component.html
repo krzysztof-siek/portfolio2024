@@ -1,7 +1,7 @@
-<form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="form" data-netlify="true" method="POST">
+<form [formGroup]="contactForm" class="form" data-netlify="true" method="POST" name="contact">
   <mat-form-field class="custom-mat-form-field">
     <mat-label>{{ 'contact.enterName' | translate }}</mat-label>
-    <input formControlName="name" matInput>
+    <input formControlName="name" matInput name="name">
     <mat-error *ngIf="contactForm.get('name')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>
@@ -11,7 +11,7 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>{{ 'contact.enterEmail' | translate }}</mat-label>
-    <input formControlName="email" matInput>
+    <input formControlName="email" matInput name="name">
     <mat-error *ngIf="contactForm.get('email')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>
@@ -21,7 +21,7 @@
   </mat-form-field>
   <mat-form-field>
     <mat-label>{{ 'contact.enterSubject' | translate }}</mat-label>
-    <input formControlName="subject" matInput>
+    <input formControlName="subject" matInput name="name">
     <mat-error *ngIf="contactForm.get('subject')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>
@@ -31,7 +31,7 @@
   </mat-form-field>
   <mat-form-field class="example-full-width">
     <mat-label>{{ 'contact.message' | translate }}</mat-label>
-    <textarea formControlName="message" matInput></textarea>
+    <textarea formControlName="message" matInput name="name"></textarea>
     <mat-error *ngIf="contactForm.get('message')?.hasError('required')">
       {{ 'errors.required' | translate }}
     </mat-error>

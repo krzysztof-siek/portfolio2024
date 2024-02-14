@@ -30,9 +30,4 @@ export class ContactFormComponent {
     message: new FormControl('', [Validators.required, Validators.minLength(10)])
   })
 
-  onSubmit(): void {
-    // TODO: Podłączyć wysyłanie formularza pod netifly
-    console.log(this.contactForm.value)
-  }
-
 }
