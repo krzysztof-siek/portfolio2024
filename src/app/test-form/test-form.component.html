@@ -1,19 +1,9 @@
-<form data-netlify="true" method="POST" name="contact">
-  <input name="form-name" type="hidden" value="contact">
+<form name="contact" netlify>
   <p>
-    <label>Your Name: <input name="name" type="text"/></label>
+    <label>Name <input name="name" type="text"/></label>
   </p>
   <p>
-    <label>Your Email: <input name="email" type="text"/></label>
-  </p>
-  <p>
-    <label>Your Role: <select multiple name="role[]">
-      <option value="leader">Leader</option>
-      <option value="follower">Follower</option>
-    </select></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
+    <label>Email <input name="email" type="email"/></label>
   </p>
   <p>
     <button type="submit">Send</button>
