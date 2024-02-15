@@ -10,7 +10,7 @@
         <swiper-slide *ngFor="let project of projects | async" lazy="true">
           <div class="slide-wrapper">
             <div class="image">
-              <img [src]="'assets/images/projects/' + project.image + '.png'" loading="lazy">
+              <img [src]="'assets/images/projects/' + project.image + '.png'">
             </div>
             <div class="info">
               <h4 class="info-title">{{ project.name }}</h4>
