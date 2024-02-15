@@ -1,4 +1,5 @@
-<form [formGroup]="contactForm" class="form" data-netlify="true" method="POST" name="contact">
+<form (ngSubmit)="onSubmit()" [formGroup]="contactForm" class="form" data-netlify="true" method="POST" name="contact">
+  <input name="form-name" type="hidden" value="contact"/>
   <mat-form-field class="custom-mat-form-field">
     <mat-label>{{ 'contact.enterName' | translate }}</mat-label>
     <input formControlName="name" matInput name="name" required>
@@ -39,7 +40,6 @@
       {{ 'errors.minLength10' | translate }}
     </mat-error>
   </mat-form-field>
-  <input name="form-name" type="hidden" value="contact"/>
   <button [disabled]="!contactForm.valid" class="primary-button" mat-raised-button type="submit">
     {{ 'buttons.send' | translate }}
   </button>

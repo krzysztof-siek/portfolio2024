@@ -30,4 +30,8 @@ export class ContactFormComponent {
     message: new FormControl('', [Validators.required, Validators.minLength(10)])
   })
 
+  onSubmit(): void {
+    console.log(this.contactForm.value)
+  }
+
 }
