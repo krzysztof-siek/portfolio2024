@@ -31,7 +31,6 @@ import {SectionTitleComponent} from "./shared/section-title/section-title.compon
 import {ContactListComponent} from "./sections/contact/contact-list/contact-list.component";
 import {MapComponent} from "./sections/contact/map/map.component";
 import {ContactFormComponent} from "./sections/contact/contact-form/contact-form.component";
-import {TestFormComponent} from "./test-form/test-form.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   const path = window.location.hostname.includes('github.io')
@@ -86,8 +85,7 @@ const COMPONENTS = [
     SectionTitleComponent,
     ContactListComponent,
     MapComponent,
-    ContactFormComponent,
-    TestFormComponent
+    ContactFormComponent
   ],
   providers: [
     provideAnimationsAsync()

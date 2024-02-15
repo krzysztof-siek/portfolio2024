@@ -31,7 +31,13 @@ export class ContactFormComponent {
   })
 
   onSubmit(): void {
-    console.log(this.contactForm.value)
+    const hiddenForm = document.querySelector('#hiddenForm') as HTMLFormElement;
+    (hiddenForm.querySelector('#name') as HTMLInputElement).value = this.contactForm.value.name || '';
+    (hiddenForm.querySelector('#email') as HTMLInputElement).value = this.contactForm.value.email || '';
+    (hiddenForm.querySelector('#subject') as HTMLInputElement).value = this.contactForm.value.subject || '';
+    (hiddenForm.querySelector('#message') as HTMLInputElement).value = this.contactForm.value.message || '';
+
+    hiddenForm.submit();
   }
 
 }

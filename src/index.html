@@ -11,5 +11,12 @@
 </head>
 <body class="mat-typography">
 <app-root></app-root>
+<form hidden id="hiddenForm" method="POST" name="contact" netlify>
+  <input name="form-name" type="hidden" value="contact"/>
+  <input id="name" name="name" type="hidden"/>
+  <input id="email" name="email" type="hidden"/>
+  <input id="subject" name="subject" type="hidden"/>
+  <textarea id="message" name="message" type="hidden"></textarea>
+</form>
 </body>
 </html>
