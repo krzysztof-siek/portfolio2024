@@ -32,7 +32,7 @@ export class NavbarComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   checkScroll(event: Event) {
     const scrollY = window.scrollY;
-    this.isSticky = scrollY > 0;
+    this.isSticky = scrollY > 10;
   }
 
   isSectionInView(sectionId: string): boolean {

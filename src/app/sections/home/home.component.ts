@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {ScrollService} from "../../services/scroll.service";
 import {TranslateService} from "@ngx-translate/core";
 import {finalize, Subject, takeUntil, timer} from "rxjs";
+import {LoadService} from "../../services/load.service";
 
 @Component({
   selector: 'app-home',
@@ -14,7 +15,14 @@ export class HomeComponent {
   private destroy$: Subject<void> = new Subject<void>();
 
   constructor(public scrollService: ScrollService,
-              private translate: TranslateService) {
+              private translate: TranslateService,
+              private loadService: LoadService) {
+  }
+
+  onLoadImage(): void {
+    setTimeout(() => {
+      this.loadService.isLoading.next(false);
+    }, 500)
   }
 
   ngOnInit(): void {

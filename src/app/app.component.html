@@ -1,4 +1,6 @@
-<div *ngIf="isLoaded; else loading" class="app">
+<div [ngClass]="{'blocked' : loadService.isLoading | async}" class="app">
+  <app-loader *ngIf="loadService.isLoading | async"></app-loader>
+  <app-bubbles-animation *ngIf="animationVisible"></app-bubbles-animation>
   <app-navbar></app-navbar>
   <app-home></app-home>
   <app-about></app-about>
@@ -9,6 +11,3 @@
   <app-footer></app-footer>
 </div>
 
-<ng-template #loading>
-  <app-loader></app-loader>
-</ng-template>

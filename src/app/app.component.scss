@@ -1,4 +1,12 @@
+@import "src/variables";
+
 .app {
   width: 100%;
   background-color: black;
+  position: relative;
+
+  &.blocked {
+    height: 100vh;
+    overflow: hidden;
+  }
 }

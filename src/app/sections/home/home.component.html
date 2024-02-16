@@ -13,7 +13,7 @@
       <app-socials class="app-socials"></app-socials>
     </div>
     <div class="photo">
-      <img alt="home ziomek photo" loading="lazy" src="assets/images/ziomek/home.png">
+      <img (load)="onLoadImage()" alt="home ziomek photo" loading="eager" src="assets/images/ziomek/home.png">
     </div>
   </div>
 </div>

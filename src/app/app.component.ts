@@ -1,27 +1,20 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {TranslateService} from "@ngx-translate/core";
 import {register} from 'swiper/element/bundle';
+import {LoadService} from "./services/load.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'portfolio2024';
-  isLoaded = false;
+  animationVisible = false;
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, protected loadService: LoadService) {
     register();
     translate.setDefaultLang('pl');
   }
-
-  ngOnInit() {
-    // TODO: Trzeba zmienić logikę wyświetlania loadera
-    setTimeout(() => {
-      this.isLoaded = true;
-    }, 1000)
-  }
-
 
 }
