@@ -2,8 +2,9 @@
   <div class="container container-row">
     <div class="info">
       <h3 class="main-text size30 yellow">{{ 'home.welcome' | translate }}</h3>
-      <h2 class="main-text size120 white">Krzysztof Siek</h2>
-      <h4 class="main-text">Frontend developer</h4>
+      <h2 class="main-text size120 white name">Krzysztof Siek</h2>
+      <h4 class="main-text hovered"><span *ngFor="let letter of proffesionText; let i = index"
+                                          [style.transition-delay]="i * 40 + 'ms'">{{ letter }}</span></h4>
       <button (click)="scrollService.scrollTo('contact')"
               (mouseenter)="animateText()"
               (mouseleave)="onMouseLeave()"

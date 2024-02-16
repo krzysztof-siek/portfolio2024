@@ -11,6 +11,7 @@ import {LoadService} from "../../services/load.service";
 })
 export class HomeComponent {
   buttonText = 'buttons.hireMe';
+  proffesionText: string[] = "Frontend developer".split('');
   private originalText = 'buttons.hireMe';
   private destroy$: Subject<void> = new Subject<void>();
 

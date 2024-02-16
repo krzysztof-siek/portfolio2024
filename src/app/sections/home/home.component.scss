@@ -27,3 +27,15 @@
     }
   }
 }
+
+.name {
+  cursor: pointer;
+
+  &:hover + .hovered span {
+    color: $yellow;
+  }
+}
+
+
+
+
