@@ -13,9 +13,16 @@
   &.sticky-nav {
     position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, .2);
+    backdrop-filter: blur(3px);
     padding: 10px 30px;
     transition: ease-in-out .3s;
+    @media (max-width: $laptop) {
+      background-color: rgba(0, 0, 0, .7);
+      backdrop-filter: none;
+    }
+
+
   }
 
   nav {
