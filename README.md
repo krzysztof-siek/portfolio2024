@@ -4,10 +4,10 @@
 
 Portfolio2024 to projekt mojego portfolio jako programisty frontend, zrealizowany przy użyciu Angulara w wersji 17. Strona prezentuje moje umiejętności, projekty oraz doświadczenie zawodowe. W projekcie wykorzystałem następujące technologie i biblioteki:
 
-**Angular w wersji 17**: Jako główny framework do stworzenia aplikacji.
-**ngx-translate**: Dla obsługi wielojęzyczności w aplikacji.
-**Swiper.js**: Do tworzenia responsywnych i interaktywnych sliderów.
-**Angular Material**: Dla zapewnienia atrakcyjnych i funkcjonalnych elementów UI.
+**Angular w wersji 17**: Jako główny framework do stworzenia aplikacji.\
+**ngx-translate**: Dla obsługi wielojęzyczności w aplikacji.\
+**Swiper.js**: Do tworzenia responsywnych i interaktywnych sliderów.\
+**Angular Material**: Dla zapewnienia atrakcyjnych i funkcjonalnych elementów UI.\
 **Font Awesome**: Do wzbogacenia interfejsu o ikony i grafiki.
 
 ## Instalacja
