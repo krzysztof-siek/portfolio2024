@@ -1,27 +1,31 @@
 # Portfolio2024
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+## Opis
 
-## Development server
+Portfolio2024 to projekt mojego portfolio jako programisty frontend, zrealizowany przy użyciu Angulara w wersji 17. Strona prezentuje moje umiejętności, projekty oraz doświadczenie zawodowe. W projekcie wykorzystałem następujące technologie i biblioteki:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+**Angular w wersji 17**: Jako główny framework do stworzenia aplikacji.
+**ngx-translate**: Dla obsługi wielojęzyczności w aplikacji.
+**Swiper.js**: Do tworzenia responsywnych i interaktywnych sliderów.
+**Angular Material**: Dla zapewnienia atrakcyjnych i funkcjonalnych elementów UI.
+**Font Awesome**: Do wzbogacenia interfejsu o ikony i grafiki.
 
-## Code scaffolding
+## Instalacja
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Do uruchomienia projektu wymagany jest Node.js z zainstalowanym menedżerem pakietów npm. Po sklonowaniu repozytorium należy wykonać następujące kroki:
 
-## Build
+Otwórz terminal w katalogu projektu.
+Uruchom komendę:
+npm install
+Spowoduje to zainstalowanie wszystkich niezbędnych zależności.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Użycie
 
-## Running unit tests
+Po zainstalowaniu zależności, projekt można uruchomić lokalnie za pomocą Angular CLI. Użyj poniższej komendy, aby uruchomić serwer deweloperski:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng serve
+Następnie projekt będzie dostępny pod adresem http://localhost:4200/.
 
-## Running end-to-end tests
+Kontakt
+Więcej informacji oraz kontakt ze mną znajdziesz na mojej stronie: www.krzysztof-siek.pl.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
